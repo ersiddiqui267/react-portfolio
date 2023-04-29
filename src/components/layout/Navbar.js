@@ -9,6 +9,8 @@ const Navbar = function () {
     document
       .querySelector(`.open`)
       .addEventListener(`click`, handlersContext.openOffcanvas);
+
+    //eslint-disable-next-line
   }, []);
 
   return (

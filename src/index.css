@@ -1,13 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #eee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./img/background.png);
+  background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidenav-item,
+.offcanvas-item {
+  @apply w-full text-center;
+}
+
+.link {
+  @apply my-4 inline-block;
+}
+
+.link:hover {
+  @apply underline;
+}
+
+.sidenav-resume-link,
+.offcanvas-resume-link {
+  @apply my-4 inline-block;
+}
+
+.sidenav-resume-link:hover,
+.offcanvas-resume-link:hover {
+  @apply underline;
+}
+
+.sidenav-icon {
+  @apply w-8 block mx-auto my-12;
+}
+
+.offcanvas-icon {
+  @apply w-8;
+}
+
+.offcanvas {
+  background-image: url(./img/background.png);
+  background-attachment: fixed;
+}
+
+.open,
+.close {
+  @apply cursor-pointer;
 }

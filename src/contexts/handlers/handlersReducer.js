@@ -7,6 +7,9 @@ const handlersReducer = function (state, action) {
         ...state,
         activeTab: action.payload,
       };
+
+    default:
+      return state;
   }
 };
 

@@ -17,7 +17,7 @@ const Sidenav = function () {
   }, []);
 
   return (
-    <div className="sidenav hidden md:block w-48 min-h-screen border-2 border-transparent">
+    <div className="sidenav hidden md:block shrink-0 md:w-48 lg:w-64 min-h-screen border-2 border-transparent">
       <ul>
         <li className="sidenav-item mt-48">
           <Link
@@ -54,9 +54,10 @@ const Sidenav = function () {
         </li>
         <li className="sidenav-item">
           <a
-            className="sidenav-resume-link text-gray-400"
-            href="../assets/resume.pdf"
+            className="sidenav-resume-link resume text-gray-400"
+            href="https://anascodes.netlify.app/assets/resume.pdf"
             target="_blank"
+            rel="noreferrer"
           >
             Resume
           </a>

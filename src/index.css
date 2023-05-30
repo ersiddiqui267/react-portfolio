@@ -13,6 +13,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./img/background.png);
   background-attachment: fixed;
+  backdrop-filter: blur(8px);
+}
+
+.App {
+  @apply min-h-screen md:flex;
 }
 
 .sidenav-item,
@@ -49,9 +54,15 @@ body {
 .offcanvas {
   background-image: url(./img/background.png);
   background-attachment: fixed;
+  backdrop-filter: blur(8px);
 }
 
 .open,
 .close {
   @apply cursor-pointer;
+}
+
+.intro {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
 }

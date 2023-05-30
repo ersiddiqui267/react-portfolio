@@ -61,9 +61,10 @@ const Offcanvas = function () {
         </li>
         <li className="offcanvas-item">
           <a
-            className="offcanvas-resume-link text-gray-400"
-            href="../assets/resume.pdf"
+            className="offcanvas-resume-link resume text-gray-400"
+            href="https://anascodes.netlify.app/assets/resume.pdf"
             target="_blank"
+            rel="noreferrer"
           >
             Resume
           </a>
